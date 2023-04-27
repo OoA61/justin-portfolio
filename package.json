@@ -5,6 +5,8 @@
   "engines": {
     "node": "18.15.0"
   },
+  "main": "server.js",
+
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
@@ -32,10 +34,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm install"
   },
   "eslintConfig": {
     "extends": [
