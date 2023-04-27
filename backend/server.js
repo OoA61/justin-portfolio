@@ -11,10 +11,6 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/hello', (req, res) => {
-    console.log('hello')
-})
-
 app.post('/api/contact', async (req, res) => {
     console.log('sending email')
     const { name, email, message } = req.body;
