@@ -1,0 +1,4 @@
+          <p>I'm a Full Stack software developer with experience in JavaScript, and expertise in frameworks like React, Node.js, MySQL and Express.js.</p>
+          <p>I love developing projects that I'm passionate about and the process of learning new ideas from each development puzzle piece that is put into place.</p>
+          <p>My background is in Physical Rehabilitation Science where my passion was helping people. I carry the same mentality in development.</p>
+          <p>Whether is the user or another developer, my passion for helping people will show in my work.</p>
