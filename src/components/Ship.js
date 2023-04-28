@@ -13,7 +13,7 @@ const SmokeParticle = ({ x, y, opacity }) => (
         top: `${y}px`,
         width: '15px',
         height: '15px',
-        transform: 'translate(13px, 13sspx)',
+        transform: 'translate(13px, 13px)',
         borderRadius: '50%',
         backgroundColor: `rgba(256, 256, 256, ${opacity})`,
       }}
