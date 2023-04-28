@@ -11,11 +11,11 @@ const SmokeParticle = ({ x, y, opacity }) => (
         position: 'absolute',
         left: `${x}px`,
         top: `${y}px`,
-        width: '10px',
-        height: '10px',
-        transform: 'translate(16px, 16px)',
+        width: '15px',
+        height: '15px',
+        transform: 'translate(13px, 13sspx)',
         borderRadius: '50%',
-        backgroundColor: `rgba(128, 128, 128, ${opacity})`,
+        backgroundColor: `rgba(256, 256, 256, ${opacity})`,
       }}
     />
   );
@@ -92,7 +92,7 @@ const Ship = ( showShip ) => {
             updateVelocity();
             updatePosition();
             updateSmokeTrail();
-          }, 1000 / 60); // Update 60 times per second
+          }, 1000 / 90); // Update 60 times per second
       
           return () => clearInterval(interval);
           
