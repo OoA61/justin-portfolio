@@ -6,6 +6,8 @@ import {rightDivVariant, leftDivVariant, info} from '../constants'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import Justin_Ham_Resume from '../resume/Justin_Ham_Resume.pdf'
+
 
 const logos = [
   faJs,
@@ -85,6 +87,9 @@ const About = () => {
           <div className='card flex'>
             <h3>Skills</h3>
             <p>{info.skills}</p>
+            <a href={Justin_Ham_Resume} target="_blank">
+              <button>Click for Resume</button>
+            </a>
           </div>
         </div>
         <div className='bottom-right-about flex'>

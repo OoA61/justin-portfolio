@@ -145,6 +145,25 @@ html {
     h4{
         font-size: 1.25rem;
     }
+    button {
+        margin-left: 20px;
+        padding: 20px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.6);
+        border-radius: 10px;
+        color: #47C7FC;
+        transition: .3s ease-in;
+        border-style: none;
+        cursor: pointer;
+        font-size: .8rem;
+        border-width: 1px;
+        &:hover {
+            color: #FF8000;
+            background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+            border-style: solid;
+            border-color: #FF8000;
+            border-width: 1px;
+        }
+    }
     .line {
         width: 90%;
         border: solid;
@@ -583,6 +602,7 @@ html {
                 margin: 10px 0px;
                 font-size: clamp(.9rem, 1.2vw, 2rem);
             }
+            
         }
     }
     h2 {
