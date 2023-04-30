@@ -68,7 +68,7 @@ const Contact = () => {
               <h3>Location</h3>
               <p>San Jose, California (United States)</p>
               <h3>Email</h3>
-              <p>justin-ham61@gmail.com</p>
+              <p>justin-ham@outlook.com</p>
               <h3>Phone</h3>
               <p>(408)516-7761</p>
             </div>
