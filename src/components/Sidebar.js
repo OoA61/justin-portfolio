@@ -70,6 +70,7 @@ const Sidebar = () => {
       </nav>
       <ul className="right-header">
         {navLinks.map((nav) => (
+          
           <li
           key={nav.id}
           >

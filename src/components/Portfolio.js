@@ -18,11 +18,11 @@ const Portfolio = () => {
   const projectData = {
     ooatyper: {
       title: "OoATyper",
-      text: "Web-based Type Speed game that allows users to add friends and create groups to complete with one another. The website is running on Node.Js and Express.Js that communicates with MySQL server running on an AWS EC2 Instance. The prompt is updated every day from the server where a string is automatically divided into the format present on screen so that a typing speed test could be conducted. The test is done though front-end vanilla Javascript where each of the user's keypress is compared with the prompt after each keystroke. One key features of this typing test is that extra letters typed by the user will create new letters on the screen that dynamically update the page to show the typing errors."
+      text: "Web-based Typing Speed game that allows users to add friends and create groups to complete with one another. The website is a Node.Js based project that communicates with a MySQL server running on an AWS EC2 Instance. The prompt is updated every day from the server where a string is automatically divided into the format present on screen so that a typing speed test can be conducted. The test is done through front-end vanilla Javascript where each keypress is compared with the prompt. One unique feature of this typing test is that extra (incorrect) letters typed by the user will create new letters on the screen that dynamically update the page to display errors."
     },
     racegambit: {
       title: "RaceGambit",
-      text: "Web-based platform where users can place bets on various categories of Formula 1. The website is hosted on AWS using Elastic Beanstalk and Code Pipeline updates the website when the Git Repository is updated. The backend is managed by Node.Js and Express.Js. A custom MySQL Database is running on an EC2 instance on AWS. RestAPI calls are made to Ergast.com after each race session in order to retrieve various race informations and determine the winning bets. Users are given a fixed amount of usable balance on account creation with more balance getting added on a weekly basis. Users can create leagues or join one with the league search function and the league's password. Leagues allow users to compare their betting performance with other users in the league. Users are able to click into each bet in order look look at the overall statistics of the bet such as total bet distribution, bet pool and bet amount distribution."
+      text: "Web-based platform where users can place bets on various categories regarding the Formula 1 Championship. The website is hosted on AWS using Elastic Beanstalk and CodePipeline updates the website when the Git Repository is updated. The backend is managed by Node.Js and Express.Js. A custom MySQL Database is running on an EC2 instance on AWS. RestAPI calls are made to Ergast.com after each race session in order to retrieve various race information and determine the winning bets. Users are given a fixed amount of usable balance on account creation with more balance getting added on a weekly basis. Users can create leagues or join one with the league search function and the league's password. Leagues allow users to compare their betting performance with other users in the league."
     }
   }
 
@@ -83,8 +83,8 @@ const Portfolio = () => {
               <>
                 {showLeftBtn ? 
                   <div className='button-overlay'>
-                    <button className='site'><FontAwesomeIcon icon={faUpRightFromSquare}/></button>
-                    <button className='git'><FontAwesomeIcon icon={faGithub}/></button>
+                    <a href='https://ooatyper.herokuapp.com/' target="_blank"><button className='site' ><FontAwesomeIcon icon={faUpRightFromSquare}/></button></a>
+                    <a href='https://github.com/OoA61/ooatyper' target="_blank"><button className='git'><FontAwesomeIcon icon={faGithub}/></button></a>
                   </div>
                 : <></>}
               </>
@@ -106,6 +106,7 @@ const Portfolio = () => {
             </div>
             <div className='description-main'>
                 <p>{projectDescription.ooatyper}</p>
+                <p className='more'>Click for more...</p>
             </div>
           </motion.div>
         </motion.div>
@@ -119,8 +120,8 @@ const Portfolio = () => {
               <>
                 {showRightBtn ? 
                   <div className='button-overlay'>
-                    <button className='site'><FontAwesomeIcon icon={faUpRightFromSquare}/></button>
-                    <button className='git'><FontAwesomeIcon icon={faGithub}/></button>
+                    <a href="https://racegambit.com" target="_blank"><button className='site'><FontAwesomeIcon icon={faUpRightFromSquare}/></button></a>
+                    <a href="https://github.com/OoA61/f1-server" target="_blank"><button className='git'><FontAwesomeIcon icon={faGithub}/></button></a>
                   </div>
                 : <></>}
               </>
@@ -139,6 +140,7 @@ const Portfolio = () => {
             </div>
             <div className='description-main'>
                 <p>{projectDescription.racegambit}</p>
+                <p className='more'>Click for more...</p>
             </div>
           </motion.div>
         </motion.div>

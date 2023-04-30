@@ -22,7 +22,7 @@ html {
     justify-content: center;
     gap: 20px;
     color: white;
-    margin-top: 200px;
+    margin-top: 0px;
     h2 {
     font-size: 38px;
     margin: 0px;
@@ -443,6 +443,10 @@ html {
                 color: white;
                 font-size: clamp(.8rem, 1.4vw, .9rem);
             }
+            .more {
+                margin-top: 10px;
+                text-decoration: underline;
+            }
         }
         .more {
             button {
@@ -475,6 +479,7 @@ html {
     justify-content: center;
     gap: 20px;
     color: white;
+    margin-bottom: 30px;
     @media screen and (max-width: 900px){
         flex-direction: column;
         align-items: center;
@@ -510,17 +515,24 @@ html {
                 .regular-input {
                     width: 90%;
                     height: 40px;
+                    padding-left: 10px;
                 }
                 .message-input {
-                    width: 90%;
+                    width: 89%;
                     flex-grow: 1;
+                    padding: 10px;
+                    resize: none;
                 }
-                input{
+                input, 
+                textarea {
                     background-color: rgba($color: #FFFFFF, $alpha: 0.4);
                     border: none;
                     border-radius: 10px;
                     margin-bottom: 10px;
+                    color: rgb(109, 109, 109);
+                    font-size: clamp(.9rem, 1.2vw, 2rem);
                 }
+                
                 button {
                     width: 150px;
                     height: 40px;
@@ -735,12 +747,14 @@ body {
         list-style: none;
         display: flex;
         gap: 30px;
-        align-items: center; 
+        align-items: center;
         .underline{
-            width: 98%;
+            width: 80%;
             border-width: 1px;
             border-style: solid;
-            border-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: rgb(175, 175, 175);
         }
         a {
             font-family: 'Lato', sans-serif;
@@ -754,7 +768,6 @@ body {
         .active {
             background-color: rgb(233, 233, 233);
             border-radius: 10px;
-
         }
         li {
             transition: all .3s ease-out;

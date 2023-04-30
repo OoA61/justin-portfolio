@@ -82,11 +82,11 @@ const Contact = () => {
         <div className='input-fields flex'>
           <form className='flex' onSubmit={handleSubmit}>
             <label htmlFor="Name" >Your Name</label>
-            <input type="text" value={name} name='Name' className='regular-input' required onChange={(e) => setName(e.target.value)}/>
+            <input type="text" value={name} name='Name' className='regular-input' required onChange={(e) => setName(e.target.value)} placeholder="Name"/>
             <label htmlFor="Email">Your Email</label>
-            <input type="email" value={email} name='Email' className='regular-input' required onChange={(e) => setEmail(e.target.value)}/>
+            <input type="email" value={email} name='Email' className='regular-input' required onChange={(e) => setEmail(e.target.value)} placeholder="Your Email"/>
             <label htmlFor="Message">Your Message</label>
-            <input type="text" value={message} name='Message' required className='message-input' onChange={(e) => setMessage(e.target.value)}/>
+            <textarea type="text" value={message} name='Message' required className='message-input' onChange={(e) => setMessage(e.target.value)} placeholder="Your Message" />
             <button type='submit'>Send</button>
           </form>
         </div>
