@@ -79,8 +79,8 @@ html {
             justify-content: center;
         }
         svg {
-            width: 90px;
-            height: 90px;
+            width: 95px;
+            height: 95px;
             @media screen and (max-width:900px){
                 width: 50px;
                 height: 50px;
@@ -617,6 +617,7 @@ body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
   &::-webkit-scrollbar{
       display: none;
@@ -628,6 +629,7 @@ body {
 .section{
     overflow-x: hidden;
     height: 800px;
+    width: 100%;
     @media screen and (max-width: 900px){
         height: 1400px;
     }
