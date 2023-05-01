@@ -306,10 +306,10 @@ html {
 .portfolio-header{
     width: 80%;
     h2{
-        font-size: clamp(2rem, 3vw, 4rem);
+        font-size: clamp(2rem, 3vw, 3rem);
     }
     h1{
-        font-size: clamp(4rem, 6vw, 8rem);
+        font-size: clamp(4rem, 6vw, 6rem);
     }
 }
 
@@ -510,7 +510,7 @@ html {
             height: 75%;
         }
         width: 40%;
-        height: 85%;
+        height: 100%;
         border-radius: 20px;
     }
     .right-contact {
@@ -578,10 +578,10 @@ html {
         .contact-header{
             width: 90%;
             h2{
-                font-size: clamp(2rem, 3vw, 4rem);
+                font-size: clamp(2rem, 3vw, 3rem);
             }
             h1{
-                font-size: clamp(4rem, 6vw, 8rem);
+                font-size: clamp(4rem, 6vw, 6rem);
             }
         }
         .contact-left {
@@ -595,12 +595,12 @@ html {
                 align-items: center;
             }
             h3{
-                font-size: clamp(1.1rem, 1.4vw, 2rem);
+                font-size: clamp(1.1rem, 1.4vw, 1.6rem);
                 margin: 10px 0px;
             }
             p{
                 margin: 10px 0px;
-                font-size: clamp(.9rem, 1.2vw, 2rem);
+                font-size: clamp(.9rem, 1.2vw, 1.4rem);
             }
             
         }
